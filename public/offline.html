@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AYANFE CLOTHIERS — Offline</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Inter:wght@400;500&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0d001a 0%, #1a0033 50%, #2d0057 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      color: #fff;
+    }
+    .card {
+      text-align: center;
+      max-width: 480px;
+      padding: 3rem 2rem;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 24px;
+      backdrop-filter: blur(20px);
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      letter-spacing: 0.08em;
+      color: #c9a84c;
+      margin-bottom: 0.25rem;
+    }
+    .tagline {
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      color: rgba(255,255,255,0.4);
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+    }
+    .icon { font-size: 4rem; margin-bottom: 1.5rem; }
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    p { color: rgba(255,255,255,0.6); line-height: 1.7; margin-bottom: 2rem; }
+    .btn {
+      display: inline-block;
+      padding: 0.875rem 2rem;
+      background: #7b1fa2;
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      letter-spacing: 0.04em;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: #5c0099; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">AYANFE</div>
+    <div class="tagline">CLOTHIERS</div>
+    <div class="icon">📶</div>
+    <h1>You&apos;re Offline</h1>
+    <p>
+      It seems you&apos;re not connected to the internet right now.
+      Please check your connection and try again — we&apos;ll be right here when you return.
+    </p>
+    <em style="color: #c9a84c; font-family: 'Cormorant Garamond', serif; font-size: 1.125rem; display: block; margin-bottom: 2rem;">
+      We Style You, You Flaunt It...
+    </em>
+    <button class="btn" onclick="window.location.reload()">Try Again</button>
+  </div>
+</body>
+</html>
